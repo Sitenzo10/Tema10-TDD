@@ -14,4 +14,19 @@ public class testCoche {
         nuevoCoche.acelerar(30);
         Assertions.assertEquals(30, nuevoCoche.velocidad);
     }
+    @Test
+    public void test_decelerar_vel_disminuye(){
+        Coche nuevoCoche = new Coche();
+        nuevoCoche.velocidad=50;
+        nuevoCoche.decelerar(20);
+        Assertions.assertEquals(30, nuevoCoche.velocidad);
+    }
+
+    @Test
+    public void test_decelerar_vel_no_cero(){
+        Coche nuevoCoche = new Coche();
+        nuevoCoche.velocidad=50;
+        nuevoCoche.decelerar(80);
+        Assertions.assertEquals(0, nuevoCoche.velocidad);
+    }
 }
