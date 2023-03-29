@@ -11,14 +11,14 @@ public class testCoche {
     @Test
     public void test_acelerar_vel_aumenta(){
         Coche nuevoCoche = new Coche();
-        nuevoCoche.acelerar(30);
+        nuevoCoche.acelerar_Andres(30);
         Assertions.assertEquals(30, nuevoCoche.velocidad);
     }
     @Test
     public void test_decelerar_vel_disminuye(){
         Coche nuevoCoche = new Coche();
         nuevoCoche.velocidad=50;
-        nuevoCoche.decelerar(20);
+        nuevoCoche.decelerar_Andres(20);
         Assertions.assertEquals(30, nuevoCoche.velocidad);
     }
 
@@ -26,7 +26,7 @@ public class testCoche {
     public void test_decelerar_vel_no_cero(){
         Coche nuevoCoche = new Coche();
         nuevoCoche.velocidad=50;
-        nuevoCoche.decelerar(80);
+        nuevoCoche.decelerar_Andres(80);
         Assertions.assertEquals(0, nuevoCoche.velocidad);
     }
 }
